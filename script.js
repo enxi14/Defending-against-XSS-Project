@@ -34,10 +34,10 @@ function validateAndSubmit() {
 }
 
 function sanitizeInput(input) {
-    // Implement proper input sanitization logic to defend against XSS
-    // For simplicity, this example only replaces '<' and '>' characters
-    return input.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    var doc = new DOMParser().parseFromString(input, 'text/html');
+    return doc.body.textContent || "";
 }
+
 
 function submitForm() {
     // Perform any additional form submission logic here
