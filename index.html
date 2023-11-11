@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup</title>
+    <!-- Add a script tag to include your JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <h2>Newsletter Signup</h2>
+    <form id="newsletterForm">
+        <!-- Existing fields -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- New phone number field -->
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" maxlength="12" placeholder="e.g., 123-456-7890" required>
+
+        <button type="button" onclick="validateAndSubmit()">Subscribe</button>
+    </form>
+
+</body>
+</html>
