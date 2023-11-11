@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter Signup</title>
-    <!-- Add a script tag to include your JavaScript file -->
-    <script src="script.js" defer></script>
+    <script src="your_script.js" defer></script>
 </head>
 
 <body>
@@ -20,6 +19,14 @@
         <!-- New phone number field -->
         <label for="phone">Phone Number:</label>
         <input type="text" id="phone" name="phone" maxlength="12" placeholder="e.g., 123-456-7890" required>
+
+        <!-- New field for name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- New textarea for comments -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" maxlength="255" placeholder="Your comments"></textarea>
 
         <button type="button" onclick="validateAndSubmit()">Subscribe</button>
     </form>
